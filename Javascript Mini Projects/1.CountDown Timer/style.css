@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100;1,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* color: white; */
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    background-image: url('./img/alberto-restifo-cFplR9ZGnAk-unsplash.jpg') ;
+    background-size: cover;
+    background-position:center center ;
+    min-height: 100vh;
+}
+h1{
+    font-weight: normal;
+    letter-spacing: 0.75rem;
+    font-size: 4rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+.countdown-container{
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+}
+.big-text{
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 1;
+    margin: 1rem 2rem ;
+}
+.elements{
+    text-align: center;
+}
+.elements span{
+    font-size: 1.5rem;
+}
