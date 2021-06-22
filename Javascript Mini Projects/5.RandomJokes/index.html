@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Jokes</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(33, 206, 148);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: 'Raleway', sans-serif;
+        }
+        .jokes-box{
+            box-shadow: 0 10px 20px rgba(15, 15, 15, 0.966);
+            padding: 2rem 1rem;
+            text-align: center;
+            height: 300px;
+            width: 400px;
+            border-radius: 10px;
+            background-color: antiquewhite;
+            border: 2px solid darkblue;
+        }
+        .joke{
+            position: relative;
+            padding: 3rem 1rem;
+        }
+        h2{
+            font-size: 1.75;
+            text-transform: capitalize;
+        }
+        p{
+            font-size: 1.25rem;
+        }
+        button{
+            width: 400px;
+            font-size: 1.25rem;
+            background-color: rgb(230, 163, 19);
+            color: white;
+            border-radius: 10px;
+            font-size: 1rem;
+            padding: 1rem;
+            letter-spacing: 2px;
+           transition: all 0.5s; 
+           cursor: pointer;
+        }
+        button:hover{
+            background-color: chocolate;
+            letter-spacing: 7px;
+        }
+    </style>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="jokes-box">
+            <h2>Get Random jokes on each click</h2>
+            <div class="joke">
+                <p>
+                    <span id="setup"  style="font-style:normal;"> the joke  </span> <span id="punchline" style="font-style: italic;color:rgb(228, 81, 105)">this is punch</span>
+                 </p>
+            </div>
+        </div>
+        <button>Next</button>
+    </div>
+</body>
+</html>
